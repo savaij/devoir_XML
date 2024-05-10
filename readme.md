@@ -1,7 +1,7 @@
  # Rendu devoir XML
 
 ## Encodage XML d’un forum Incel italien
- Le rendu PDF de l'experience peut être visionné <a href='https://nbviewer.org/github/savaij/devoir_XML/blob/main/report/main/report.pdf' target='blank_'>en cliquant ici</a>.
+ Le rendu PDF de l'experience peut être visionné <a href='https://nbviewer.org/github/savaij/devoir_XML/blob/main/report/main/report.pdf' target='_blank'>en cliquant ici</a>.
 <br><br>
 ### Contenu:
 
