@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<grammar ns="" xmlns="http://relaxng.org/ns/structure/1.0" datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes">
+  <start>
+    <element name="forum">
+      <oneOrMore>
+        <element name="thread">
+          <attribute name="title"/>
+          <oneOrMore>
+            <element name="post">
+              <attribute name="id">
+                <data type="integer"/>
+              </attribute>
+              <element name="date">
+                <attribute name="day">
+                  <data type="integer"/>
+                </attribute>
+                <attribute name="month">
+                  <data type="integer"/>
+                </attribute>
+                <attribute name="year">
+                  <data type="integer"/>
+                </attribute>
+                <data type="date"/>
+              </element>
+              <element name="time">
+                <data type="time"/>
+              </element>
+              <element name="author">
+                <attribute name="who"/>
+                <text/>
+              </element>
+              <element name="text">
+                <text/>
+              </element>
+            </element>
+          </oneOrMore>
+        </element>
+      </oneOrMore>
+    </element>
+  </start>
+</grammar>
