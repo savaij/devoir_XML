@@ -187,7 +187,7 @@ La feuille de transformation que j'ai créée transforme le texte xml en un csv 
 
 La raison des erreurs est que la fonction \emph{distinct-values()} ne renvoie pas des nœuds mais des valeurs atomiques. Pour résoudre ces problèmes, j'ai dû créer la variable \$currentAuthor comme une copie de l'élément courant, et j'ai dû créer une autre variable pour l'élément racine de tout le document. Le code final XSLT que j'ai utilisé se trouve dans les fichiers.
 \\
-Comme la fonction \emph{distinct-values()} n'existe que dans la version 2.0 de XSLT, j'ai créé un code qui est également compatible avec la version 1.0. Les deux codes se trouvent dans les fichiers to\_csv\_v1.xsl et to\_csv\_v2.xsl. Le code pour la version 1.0 est très inefficace et prend plusieurs minutes pour effectuer la transformation. Une version plus efficace a été créée avec chatGPT et se trouve elle aussi dans les fichiers. 
+Comme la fonction \emph{distinct-values()} n'existe que dans la version 2.0 de XSLT, j'ai créé un code qui est également compatible avec la version 1.0. Les deux codes se trouvent dans les fichiers to\_csv\_v1.xsl et to\_csv\_v2.xsl. Le code pour la version 1.0 est très inefficace et prend plusieurs minutes (476 secondes pour la précision) pour effectuer la transformation. Une version plus efficace a été créée avec chatGPT et se trouve elle aussi dans les fichiers. 
 
 \section{Limites du travail}
 Comme il s'agit d'un fichier XML créé avec du code python, il n'arrive à encoder que des informations de base. Il faudrait utiliser des systèmes beaucoup plus sophistiqués pour pouvoir créer un encodage XML automatisé des textes contenus dans les post du forum, en fonction de leur signification.
